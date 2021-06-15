@@ -1,0 +1,11 @@
+$h1: 35px;
+
+$fontBase: 14px;
+
+@function px2rem($px2) {
+    @return ($px2 / 100 * 1rem);
+}
+
+@function mpx($mpx) {
+    @return ($mpx / 2 * 1px);
+}

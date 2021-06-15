@@ -1,0 +1,97 @@
+
+html, body, h1,h2,h3,h4,h5,h6,p,ul,dl,li,dd,dt {
+    margin: 0;
+}
+html, body, h1,h2,h3,h4,h5,h6,p,ul,dl,li,dd,dt, div,span,i,s,u {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Axiforma-SemiBold;
+}
+
+html,body {
+    font-family: Axiforma-Light, PingFang SC, Helvetica, "微软雅黑";
+    font-size: 12px;
+    // min-width: 960px;
+}
+
+a {
+    color: #353252;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;    //去掉标签默认的左边符号
+}
+
+li{
+    list-style-type:none;    //去掉标签默认的左边符号
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+
+.white{
+	color: #FFFFFF;
+}
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    @extend .flex;
+    justify-content: space-between;
+}
+
+.flex-center-center {
+    @extend .flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between-center {
+    @extend .flex-between;
+    align-items: center;
+}
+
+.flex-justify-center {
+    @extend .flex;
+    justify-content: center;
+}
+
+.flex-align-center {
+    @extend .flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 751px) {
+    html {
+        font-size: calc(100 * (100vw / 1920));
+    }
+	.mob-show {
+		display: none !important;
+	}
+	
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: calc(100vw * 10 / 75);
+    }
+	.pc-show {
+		display: none !important;
+	}
+}
